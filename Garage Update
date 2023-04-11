@@ -1,0 +1,17 @@
+CREATE TABLE Garage (ID INTEGER Primary Key, Item TEXT, Vendor TEXT, Cost INTEGER, Category TEXT, Priority INTEGER);
+INSERT INTO Garage VALUES 
+(1,"Tool Storage Rack", "Amazon", 65, "Organization", 2),
+(2, "Lawn Mower", "Local", 600, "Tools", 3), (3, "Potting Bench", "Ikea", 250, "Organization", 3), 
+(4,"Hose Pot", "Grandin Road", 175, "Organization", 4),
+(5, "Wall Paint", "Sherwin Williams", 400, "Labor", 3),
+(6, "Epoxy Flooring", "Local", 1200, "Labor", 4), 
+(7, "Utility Sink", "Lowes", 150, "Equipment", 4),
+(8, "Shelving","Target",375, "Organization", 3),
+(9, "Work Bench", "DIY", 300, "Organization", 2), 
+(10, "Table Saw", "Lowes", 550, "Equipment", 4),
+(11, "Laser Leveler", "Amazon", 120, "Equipment", 3),
+(12, "Japanese Hack Saw", "Local", 85, "Equipment", 2),
+(13, "Storage cabinet", "Lowes", 225, "Organization", 3);
+
+Select * from garage order by cost;
+Select Sum (Cost) from Garage
